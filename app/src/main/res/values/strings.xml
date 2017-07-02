@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Marnie\'s Survey Application</string>
+    <string name="xcontinue">Continue</string>
+    <string name="title">Our Survey Application</string>
+    <string name="start">Start</string>
+    <string name="close">Close</string>
+    <string name="finish">Finish</string>
+    <string name="survey">Start Survey</string>
+    <string name="capture">Take Screen Shot</string>
+    <string name="fname">Enter File Name</string>
+</resources>

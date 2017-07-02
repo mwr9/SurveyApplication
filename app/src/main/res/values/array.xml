@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+   <array name="resicon">
+        <item>@drawable/ic_batteries</item>
+        <item>@drawable/ic_cigarette</item>
+        <item>@drawable/ic_dogwaste</item>
+        <item>@drawable/ic_ewaste</item>
+        <item>@drawable/ic_fast_food</item>
+        <item>@drawable/ic_glass</item>
+        <item>@drawable/ic_metal</item>
+        <item>@drawable/ic_organic</item>
+        <item>@drawable/ic_paper</item>
+        <item>@drawable/ic_plastic</item>
+        <item>@drawable/ic_diaper</item>
+        <item>@drawable/ic_chewing_gum</item>
+    </array>
+
+    <array name="restext">
+        <item>"batteries"</item>
+        <item>"cigarettes"</item>
+        <item>"dog waste"</item>
+        <item>"e-waste"</item>
+        <item>"fast food"</item>
+        <item>"glass"</item>
+        <item>"metal"</item>
+        <item>"organic waste"</item>
+        <item>"waste paper"</item>
+        <item>"plastic waste"</item>
+        <item>"human waste"</item>
+        <item>"chewing gum"</item>
+    </array>
+
+</resources>

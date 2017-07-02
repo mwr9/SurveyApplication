@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context="com.example.owner.mygridviewapplication.MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/title"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@android:color/background_dark"
+        android:orientation="horizontal" >
+
+        <com.example.owner.mygridviewapplication.LinearLayoutAbsListView
+            android:id="@+id/pane1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="@android:color/background_light"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.example.owner.mygridviewapplication.LinearLayoutAbsListView>
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:weightSum="1">
+
+            <com.example.owner.mygridviewapplication.LinearLayoutAbsListView
+                android:id="@+id/pane2"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:minHeight="275dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="#42A5F5">
+
+                <GridView
+                    android:id="@+id/gridview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rotationY="180"
+                    android:columnWidth="50dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"/>
+
+            </com.example.owner.mygridviewapplication.LinearLayoutAbsListView>
+
+
+            <com.example.owner.mygridviewapplication.LinearLayoutAbsListView
+                android:id="@+id/pane3"
+                android:layout_margin="4dp"
+                android:background="#66BB6A"
+                android:orientation="vertical"
+                android:minHeight="275dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1">
+
+            <GridView
+                android:id="@+id/gridview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rotationY="180"
+                android:columnWidth="50dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"/>
+            </com.example.owner.mygridviewapplication.LinearLayoutAbsListView>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:weightSum="1">
+
+                <com.example.owner.mygridviewapplication.LinearLayoutAbsListView
+                    android:id="@+id/pane4"
+                    android:layout_margin="4dp"
+                    android:background="#EF5350"
+                    android:orientation="vertical"
+                    android:minHeight="275dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                <GridView
+                    android:id="@+id/gridview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rotationY="180"
+                    android:columnWidth="50dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"/>
+                </com.example.owner.mygridviewapplication.LinearLayoutAbsListView>
+
+                <com.example.owner.mygridviewapplication.LinearLayoutAbsListView
+                    android:id="@+id/pane5"
+                    android:layout_margin="4dp"
+                    android:background="#42A5F5"
+                    android:orientation="vertical"
+                    android:minHeight="275dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                <GridView
+                    android:id="@+id/gridview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rotationY="180"
+                    android:columnWidth="50dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"/>
+                </com.example.owner.mygridviewapplication.LinearLayoutAbsListView>
+
+            </TableRow>
+
+            </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/fname"
+                    android:id="@+id/button_fname"
+                    android:textColor="#FFF"
+                    android:background="#3F51B5" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/capture"
+                    android:id="@+id/button_capture"
+                    android:textColor="#FFF"
+                    android:background="#3F51B5" />
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="5dp"
+                     android:layout_marginLeft="5dp"
+                     android:layout_weight="1"
+                     android:text="@string/survey"
+                     android:id="@+id/button_survey"
+                     android:textColor="#FFF"
+                     android:background="#3F51B5" />
+
+                </TableRow>
+
+            </TableLayout>
+
+                <TextView
+                    android:id="@+id/prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="@android:color/black"
+                    android:gravity="bottom"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+</LinearLayout>
